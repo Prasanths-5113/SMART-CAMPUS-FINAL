@@ -1,0 +1,50 @@
+import type { CampusNotice } from '../types';
+
+export const CAMPUS_NOTICES: CampusNotice[] = [
+  {
+    id: 'n1',
+    title: 'Bus Route Change',
+    category: 'Transport',
+    urgency: 'High',
+    message: 'Bus 3 pickup point has changed to Gate 2 tomorrow.',
+    affectedRoute: 'Bus 3',
+    deadlineHours: 12,
+    deadline: 'Tomorrow morning',
+  },
+  {
+    id: 'n2',
+    title: 'DBMS Assignment Deadline',
+    category: 'Academic',
+    urgency: 'High',
+    message: 'DBMS assignment submission closes today at 11:59 PM.',
+    deadline: 'Today',
+    deadlineHours: 8,
+  },
+  {
+    id: 'n3',
+    title: 'Scholarship Application',
+    category: 'Student Services',
+    urgency: 'Medium',
+    message: 'Eligible students can apply for the scholarship before the deadline.',
+    deadline: '2 days',
+    deadlineHours: 48,
+  },
+  {
+    id: 'n4',
+    title: 'Block B Elevator Maintenance',
+    category: 'Accessibility',
+    urgency: 'Medium',
+    message: 'Block B elevator will be unavailable from 2 PM to 4 PM.',
+    affectedLocation: 'Block B',
+    deadlineHours: 6,
+  },
+  {
+    id: 'n5',
+    title: 'Technical Club Meetup',
+    category: 'Event',
+    urgency: 'Low',
+    message: 'Technical club meetup at Seminar Hall at 4 PM.',
+    deadline: 'Today 4 PM',
+    deadlineHours: 4,
+  },
+];
